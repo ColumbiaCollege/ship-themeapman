@@ -37,10 +37,10 @@ void draw() {
     xPos = xPos + 1;
   }
   if (up) {
-    yPos = yPos + 1;
+    yPos = yPos - 1;
   }
 if (down) {
-  yPos = yPos - 1;
+  yPos = yPos + 1;
 }
   //draw shape
   rect(xPos, yPos, 20, 20);
@@ -50,6 +50,17 @@ void keyPressed() {
   if (key == 'a') {
     left = true;
   }
+  
+  if (key == 's') {
+    down = true;
+  } 
+  if (key == 'd') {
+    right = true;
+  }
+  if (key == 'w') {
+    up = true;
+  }
+
 }
 
 void keyReleased() {
@@ -57,37 +68,16 @@ void keyReleased() {
     left = false;
   }
 
-void keyPressed() {
-  if (key == 'd') {
-    right = true;
-  }
-}
 
-void keyReleased() {
   if (key == 'd') {
     right = false;
   }
-}
 
-void keyPressed() {
-  if (key == 'w') {
-    up = true;
-  }
-}
 
-void keyReleased() {
   if (key == 'w') {
     up = false;
   }
-}
 
-void keyPressed() {
-  if (key == 's') {
-    down = true;
-  }
-}
-
-void keyReleased() {
   if (key == 's') {
     down = false;
   }
