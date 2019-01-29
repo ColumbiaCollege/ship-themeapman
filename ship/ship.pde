@@ -50,16 +50,20 @@ void keyPressed() {
   if (key == 'a') {
     left = true;
   }
+  if (key == 'd') {
+    right = true;
+  }
+  if (key == 'w') {
+    up = true;
+  }
+  if (key == 's') {
+    down = true;
+  }
 }
 
 void keyReleased() {
   if (key == 'a') {
     left = false;
-  }
-
-void keyPressed() {
-  if (key == 'd') {
-    right = true;
   }
 }
 
@@ -69,23 +73,12 @@ void keyReleased() {
   }
 }
 
-void keyPressed() {
-  if (key == 'w') {
-    up = true;
-  }
-}
-
 void keyReleased() {
   if (key == 'w') {
     up = false;
   }
 }
 
-void keyPressed() {
-  if (key == 's') {
-    down = true;
-  }
-}
 
 void keyReleased() {
   if (key == 's') {
