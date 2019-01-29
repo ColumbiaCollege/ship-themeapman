@@ -50,4 +50,35 @@ void keyPressed() {
   if (key == 'a') {
     left = true;
   }
+  
+  if (key == 's') {
+    down = true;
+  } 
+  if (key == 'd') {
+    right = true;
+  }
+  if (key == 'w') {
+    up = true;
+  }
+
+}
+
+void keyReleased() {
+  if (key == 'a') {
+    left = false;
+  }
+
+
+  if (key == 'd') {
+    right = false;
+  }
+
+
+  if (key == 'w') {
+    up = false;
+  }
+
+  if (key == 's') {
+    down = false;
+  }
 }
