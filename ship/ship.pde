@@ -27,7 +27,7 @@ void setup() {
 
 void draw() {
   //wipe
-  background(0,0,0);
+  background(0, 0, 0);
 
   //update position
   if (left) {
@@ -39,18 +39,22 @@ void draw() {
   if (up) {
     yPos = yPos - 1;
   }
-if (down) {
-  yPos = yPos + 1;
-}
+  if (down) {
+    yPos = yPos + 1;
+  }
+  //if( xPos<10){
+  //  left = false;
+  //}
   //draw shape
   rect(xPos, yPos, 20, 20);
 }
 
+//begin movement
 void keyPressed() {
   if (key == 'a') {
     left = true;
   }
-  
+
   if (key == 's') {
     down = true;
   } 
@@ -60,9 +64,9 @@ void keyPressed() {
   if (key == 'w') {
     up = true;
   }
-
 }
 
+//stop movement
 void keyReleased() {
   if (key == 'a') {
     left = false;
